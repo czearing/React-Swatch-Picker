@@ -1,2 +1,2 @@
-# React-Swatch-Picker
+# SwatchPicker-test
 Created with CodeSandbox

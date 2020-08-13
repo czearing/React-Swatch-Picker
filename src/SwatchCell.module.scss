@@ -1,0 +1,40 @@
+.root {
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.3);
+  box-shadow: 0 0 2px 0 white inset;
+  border-radius: 3px;
+  position: relative;
+  outline: none;
+}
+
+.root:hover {
+  box-shadow: 0 0 0 5px rgba(220,220,220, .8) inset;
+}
+
+._selected {
+  box-shadow: 0 0 0 5px rgba(220,220,220, .3) inset;
+}
+
+._disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.root:focus::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid black;
+  box-shadow: 0 0 0 2px white inset;
+  border-radius: 3px;
+  margin: -1px;
+}
+
+._circular,
+._circular:focus::after {
+  border-radius: 9999px;
+}
+
